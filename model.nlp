@@ -1,0 +1,932 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "about,me,sukrit,tell": {
+            "domain": "default",
+            "intent": "info.about"
+          },
+          "are,who,you": {
+            "domain": "default",
+            "intent": "info.about"
+          },
+          "can,introduc,you,yourself": {
+            "domain": "default",
+            "intent": "info.about"
+          },
+          "about,give,info,me,some,sukrit": {
+            "domain": "default",
+            "intent": "info.about"
+          },
+          "about,i,know,should,sukrit,what": {
+            "domain": "default",
+            "intent": "info.about"
+          },
+          "are,skill,what,your": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "me,skillset,tell,your": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "do,know,technolog,what,you": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "do,languag,program,use,which,you": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "are,skill,technic,what,your": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "list,skill,your": {
+            "domain": "default",
+            "intent": "info.skills"
+          },
+          "me,project,show,your": {
+            "domain": "default",
+            "intent": "info.projects"
+          },
+          "have,on,project,what,work,you": {
+            "domain": "default",
+            "intent": "info.projects"
+          },
+          "can,i,of,see,some,work,your": {
+            "domain": "default",
+            "intent": "info.projects"
+          },
+          "about,me,project,tell,your": {
+            "domain": "default",
+            "intent": "info.projects"
+          },
+          "done,have,kind,of,project,what,you": {
+            "domain": "default",
+            "intent": "info.projects"
+          },
+          "can,contact,how,i,you": {
+            "domain": "default",
+            "intent": "info.contact"
+          },
+          "contact,inform,s,what,your": {
+            "domain": "default",
+            "intent": "info.contact"
+          },
+          "do,get,how,i,in,touch": {
+            "domain": "default",
+            "intent": "info.contact"
+          },
+          "i,out,reach,to,to,want,you": {
+            "domain": "default",
+            "intent": "info.contact"
+          },
+          "email,give,me,or,phone,your": {
+            "domain": "default",
+            "intent": "info.contact"
+          }
+        },
+        "intentDict": {
+          "info.about": "default",
+          "info.skills": "default",
+          "info.projects": "default",
+          "info.contact": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "info.about",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "about",
+                  "sukrit"
+                ]
+              },
+              {
+                "intent": "info.about",
+                "tokens": [
+                  "who",
+                  "are",
+                  "you"
+                ]
+              },
+              {
+                "intent": "info.about",
+                "tokens": [
+                  "can",
+                  "you",
+                  "introduc",
+                  "yourself"
+                ]
+              },
+              {
+                "intent": "info.about",
+                "tokens": [
+                  "give",
+                  "me",
+                  "some",
+                  "info",
+                  "about",
+                  "sukrit"
+                ]
+              },
+              {
+                "intent": "info.about",
+                "tokens": [
+                  "what",
+                  "should",
+                  "i",
+                  "know",
+                  "about",
+                  "sukrit"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "what",
+                  "are",
+                  "your",
+                  "skill"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "your",
+                  "skillset"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "what",
+                  "technolog",
+                  "do",
+                  "you",
+                  "know"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "which",
+                  "program",
+                  "languag",
+                  "do",
+                  "you",
+                  "use"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "what",
+                  "are",
+                  "your",
+                  "technic",
+                  "skill"
+                ]
+              },
+              {
+                "intent": "info.skills",
+                "tokens": [
+                  "list",
+                  "your",
+                  "skill"
+                ]
+              },
+              {
+                "intent": "info.projects",
+                "tokens": [
+                  "show",
+                  "me",
+                  "your",
+                  "project"
+                ]
+              },
+              {
+                "intent": "info.projects",
+                "tokens": [
+                  "what",
+                  "project",
+                  "have",
+                  "you",
+                  "work",
+                  "on"
+                ]
+              },
+              {
+                "intent": "info.projects",
+                "tokens": [
+                  "can",
+                  "i",
+                  "see",
+                  "some",
+                  "of",
+                  "your",
+                  "work"
+                ]
+              },
+              {
+                "intent": "info.projects",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "about",
+                  "your",
+                  "project"
+                ]
+              },
+              {
+                "intent": "info.projects",
+                "tokens": [
+                  "what",
+                  "kind",
+                  "of",
+                  "project",
+                  "have",
+                  "you",
+                  "done"
+                ]
+              },
+              {
+                "intent": "info.contact",
+                "tokens": [
+                  "how",
+                  "can",
+                  "i",
+                  "contact",
+                  "you"
+                ]
+              },
+              {
+                "intent": "info.contact",
+                "tokens": [
+                  "what",
+                  "s",
+                  "your",
+                  "contact",
+                  "inform"
+                ]
+              },
+              {
+                "intent": "info.contact",
+                "tokens": [
+                  "how",
+                  "do",
+                  "i",
+                  "get",
+                  "in",
+                  "touch"
+                ]
+              },
+              {
+                "intent": "info.contact",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "reach",
+                  "out",
+                  "to",
+                  "you"
+                ]
+              },
+              {
+                "intent": "info.contact",
+                "tokens": [
+                  "give",
+                  "me",
+                  "your",
+                  "email",
+                  "or",
+                  "phone"
+                ]
+              }
+            ],
+            "features": {
+              "tell": 3,
+              "me": 6,
+              "about": 4,
+              "sukrit": 3,
+              "who": 1,
+              "are": 3,
+              "you": 8,
+              "can": 3,
+              "introduc": 1,
+              "yourself": 1,
+              "give": 2,
+              "some": 2,
+              "info": 1,
+              "what": 7,
+              "should": 1,
+              "i": 5,
+              "know": 2,
+              "your": 9,
+              "skill": 3,
+              "skillset": 1,
+              "technolog": 1,
+              "do": 3,
+              "which": 1,
+              "program": 1,
+              "languag": 1,
+              "use": 1,
+              "technic": 1,
+              "list": 1,
+              "show": 1,
+              "project": 4,
+              "have": 2,
+              "work": 2,
+              "on": 1,
+              "see": 1,
+              "of": 2,
+              "kind": 1,
+              "done": 1,
+              "how": 2,
+              "contact": 2,
+              "s": 1,
+              "inform": 1,
+              "get": 1,
+              "in": 1,
+              "touch": 1,
+              "want": 1,
+              "to": 2,
+              "reach": 1,
+              "out": 1,
+              "email": 1,
+              "or": 1,
+              "phone": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  52,
+                  5
+                ],
+                "layers": [
+                  {
+                    "tell": {},
+                    "me": {},
+                    "about": {},
+                    "sukrit": {},
+                    "who": {},
+                    "are": {},
+                    "you": {},
+                    "can": {},
+                    "introduc": {},
+                    "yourself": {},
+                    "give": {},
+                    "some": {},
+                    "info": {},
+                    "what": {},
+                    "should": {},
+                    "i": {},
+                    "know": {},
+                    "your": {},
+                    "skill": {},
+                    "skillset": {},
+                    "technolog": {},
+                    "do": {},
+                    "which": {},
+                    "program": {},
+                    "languag": {},
+                    "use": {},
+                    "technic": {},
+                    "list": {},
+                    "show": {},
+                    "project": {},
+                    "have": {},
+                    "work": {},
+                    "on": {},
+                    "see": {},
+                    "of": {},
+                    "kind": {},
+                    "done": {},
+                    "how": {},
+                    "contact": {},
+                    "s": {},
+                    "inform": {},
+                    "get": {},
+                    "in": {},
+                    "touch": {},
+                    "want": {},
+                    "to": {},
+                    "reach": {},
+                    "out": {},
+                    "email": {},
+                    "or": {},
+                    "phone": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "info.about": {
+                      "bias": 1.49282114,
+                      "weights": {
+                        "tell": 0.559987962,
+                        "me": 0.68909198,
+                        "about": 3.874692202,
+                        "sukrit": 5.774980545,
+                        "who": 4.62073946,
+                        "are": 3.79450798,
+                        "you": 2.562017202,
+                        "can": 1.109904528,
+                        "introduc": 3.656464815,
+                        "yourself": 3.656464815,
+                        "give": 0.293922156,
+                        "some": -0.037356704,
+                        "info": 0.401757091,
+                        "what": -0.728063107,
+                        "should": 2.373540163,
+                        "i": -0.955371559,
+                        "know": 0.650288165,
+                        "your": -3.981146097,
+                        "skill": -0.829682708,
+                        "skillset": -0.539406478,
+                        "technolog": -1.72325182,
+                        "do": -2.273269415,
+                        "which": -0.550017655,
+                        "program": -0.550017655,
+                        "languag": -0.550017655,
+                        "use": -0.550017655,
+                        "technic": -0.140821949,
+                        "list": -0.003451236,
+                        "show": -0.164818004,
+                        "project": -2.617227793,
+                        "have": -0.552119672,
+                        "work": -0.863273501,
+                        "on": -0.424160004,
+                        "see": -0.439113468,
+                        "of": -0.567073166,
+                        "kind": -0.127959728,
+                        "done": -0.127959728,
+                        "how": -2.107446432,
+                        "contact": -2.107446432,
+                        "want": -0.782351613,
+                        "to": -0.782351613,
+                        "reach": -0.782351613,
+                        "out": -0.782351613,
+                        "email": -0.107834682,
+                        "or": -0.107834682,
+                        "phone": -0.107834682,
+                        "nonefeature": -1.361042619
+                      }
+                    },
+                    "info.skills": {
+                      "bias": 0.91037354,
+                      "weights": {
+                        "tell": 2.553185701,
+                        "me": 0.227486059,
+                        "about": -2.902781963,
+                        "sukrit": -0.794929445,
+                        "who": -2.063534737,
+                        "are": 0.587636471,
+                        "you": 0.583940029,
+                        "can": -1.021817803,
+                        "introduc": -0.303933024,
+                        "yourself": -0.303933024,
+                        "give": -1.171582699,
+                        "some": -0.473209292,
+                        "what": 1.97168076,
+                        "should": -0.266970843,
+                        "i": -1.88326025,
+                        "know": 2.446348429,
+                        "your": 3.547047377,
+                        "skill": 5.327236176,
+                        "skillset": 5.188996792,
+                        "technolog": 2.71331954,
+                        "do": 3.842951059,
+                        "which": 1.787108183,
+                        "program": 1.787108183,
+                        "languag": 1.787108183,
+                        "use": 1.787108183,
+                        "technic": 0.208452284,
+                        "list": 2.676062822,
+                        "show": -1.154116035,
+                        "project": -4.325384617,
+                        "have": -1.063416362,
+                        "work": -1.232939124,
+                        "on": -0.759729803,
+                        "see": -0.473209292,
+                        "of": -0.776895761,
+                        "kind": -0.303686529,
+                        "done": -0.303686529,
+                        "how": -0.902151704,
+                        "contact": -2.307097912,
+                        "s": -2.062422276,
+                        "inform": -2.062422276,
+                        "get": -0.657476306,
+                        "in": -0.657476306,
+                        "touch": -0.657476306,
+                        "want": -0.24092856,
+                        "to": -0.24092856,
+                        "reach": -0.24092856,
+                        "out": -0.24092856,
+                        "email": -1.171582699,
+                        "or": -1.171582699,
+                        "phone": -1.171582699,
+                        "nonefeature": -0.853329897
+                      }
+                    },
+                    "info.projects": {
+                      "bias": -0.251891073,
+                      "weights": {
+                        "tell": -0.071887843,
+                        "me": 0.703636467,
+                        "about": 1.879923582,
+                        "sukrit": -2.150290966,
+                        "who": -0.220721826,
+                        "are": -1.137970805,
+                        "you": -0.265430868,
+                        "can": 0.811650753,
+                        "introduc": -0.471534789,
+                        "yourself": -0.471534789,
+                        "give": -1.303298473,
+                        "some": 1.516040444,
+                        "info": -0.46493417,
+                        "what": -0.391566396,
+                        "should": -0.194209173,
+                        "i": 0.512061477,
+                        "know": -0.332735002,
+                        "your": 2.33152318,
+                        "skill": -1.496699214,
+                        "skillset": -2.610954762,
+                        "technolog": -0.138525829,
+                        "do": -0.35152778,
+                        "which": -0.021917323,
+                        "program": -0.021917323,
+                        "languag": -0.021917323,
+                        "use": -0.021917323,
+                        "technic": -0.173900515,
+                        "list": -0.579450011,
+                        "show": 2.078822136,
+                        "project": 7.779925823,
+                        "have": 1.670887947,
+                        "work": 2.989904165,
+                        "on": 1.008930564,
+                        "see": 1.980974317,
+                        "of": 2.642930508,
+                        "kind": 0.661957264,
+                        "done": 0.661957264,
+                        "how": -0.88887316,
+                        "contact": -1.510258675,
+                        "s": -0.812470078,
+                        "inform": -0.812470078,
+                        "get": -0.191084608,
+                        "in": -0.191084608,
+                        "touch": -0.191084608,
+                        "want": -0.385830283,
+                        "to": -0.385830283,
+                        "reach": -0.385830283,
+                        "out": -0.385830283,
+                        "email": -0.838363945,
+                        "or": -0.838363945,
+                        "phone": -0.838363945,
+                        "nonefeature": -0.231688365
+                      }
+                    },
+                    "info.contact": {
+                      "bias": 0.750760623,
+                      "weights": {
+                        "tell": -1.258075714,
+                        "me": 0.145410106,
+                        "about": -1.371314049,
+                        "sukrit": -1.371314049,
+                        "who": -0.542190313,
+                        "are": -1.46051693,
+                        "you": 0.868653655,
+                        "can": -0.230402038,
+                        "introduc": -0.740894616,
+                        "yourself": -0.740894616,
+                        "give": 2.375239372,
+                        "some": -1.468169808,
+                        "info": -0.325727522,
+                        "what": 0.373858571,
+                        "should": -0.695224881,
+                        "i": 3.322107077,
+                        "know": -1.497343779,
+                        "your": 1.1241014,
+                        "skill": -1.420672417,
+                        "skillset": -0.907714009,
+                        "technolog": -0.802119136,
+                        "do": 0.303173304,
+                        "which": -0.512217999,
+                        "program": -0.512217999,
+                        "languag": -0.512217999,
+                        "use": -0.512217999,
+                        "technic": -0.135368079,
+                        "list": -0.502345741,
+                        "show": -0.971752822,
+                        "project": -1.047940493,
+                        "have": -0.076187655,
+                        "work": -1.218629956,
+                        "on": -0.076187655,
+                        "see": -1.142442226,
+                        "of": -1.142442226,
+                        "how": 3.27044487,
+                        "contact": 4.518650055,
+                        "s": 2.865717649,
+                        "inform": 2.865717649,
+                        "get": 1.617510796,
+                        "in": 1.617510796,
+                        "touch": 1.617510796,
+                        "want": 1.889328241,
+                        "to": 1.889328241,
+                        "reach": 1.889328241,
+                        "out": 1.889328241,
+                        "email": 2.700966597,
+                        "or": 2.700966597,
+                        "phone": 2.700966597,
+                        "nonefeature": -0.736623108
+                      }
+                    },
+                    "None": {
+                      "bias": 2.704136961,
+                      "weights": {
+                        "tell": -0.513581216,
+                        "me": -0.895258009,
+                        "about": -0.623582661,
+                        "sukrit": -0.623582661,
+                        "who": -0.543159842,
+                        "are": -0.653791964,
+                        "you": -1.444435835,
+                        "can": -0.437744826,
+                        "introduc": -0.390734464,
+                        "yourself": -0.390734464,
+                        "give": -0.217313215,
+                        "some": -0.174187303,
+                        "info": -0.14234595,
+                        "what": -0.607842386,
+                        "should": -0.076289713,
+                        "i": -0.628323436,
+                        "know": -0.127199382,
+                        "your": -1.320511222,
+                        "skill": -0.703263283,
+                        "skillset": -0.108634375,
+                        "technolog": -0.050909646,
+                        "do": -0.574518383,
+                        "which": -0.165239409,
+                        "program": -0.165239409,
+                        "languag": -0.165239409,
+                        "use": -0.165239409,
+                        "technic": -0.017433597,
+                        "list": -0.592631221,
+                        "show": -0.164363772,
+                        "project": -0.296933264,
+                        "have": -0.132569537,
+                        "work": -0.111369923,
+                        "on": -0.079528593,
+                        "see": -0.031841323,
+                        "of": -0.084882259,
+                        "kind": -0.053040948,
+                        "done": -0.053040948,
+                        "how": -0.373538077,
+                        "contact": -0.252610236,
+                        "s": -0.237441257,
+                        "inform": -0.237441257,
+                        "get": -0.358369023,
+                        "in": -0.358369023,
+                        "touch": -0.358369023,
+                        "want": -0.146654069,
+                        "to": -0.146654069,
+                        "reach": -0.146654069,
+                        "out": -0.146654069,
+                        "email": -0.07496722,
+                        "or": -0.07496722,
+                        "phone": -0.07496722,
+                        "nonefeature": 9.114010811
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "Tell me about Sukrit"
+      ],
+      [
+        "en",
+        "Who are you?"
+      ],
+      [
+        "en",
+        "Can you introduce yourself?"
+      ],
+      [
+        "en",
+        "Give me some info about Sukrit"
+      ],
+      [
+        "en",
+        "What should I know about Sukrit?"
+      ],
+      [
+        "en",
+        "What are your skills?"
+      ],
+      [
+        "en",
+        "Tell me your skillset"
+      ],
+      [
+        "en",
+        "What technologies do you know?"
+      ],
+      [
+        "en",
+        "Which programming languages do you use?"
+      ],
+      [
+        "en",
+        "What are your technical skills?"
+      ],
+      [
+        "en",
+        "List your skills"
+      ],
+      [
+        "en",
+        "Show me your projects"
+      ],
+      [
+        "en",
+        "What projects have you worked on?"
+      ],
+      [
+        "en",
+        "Can I see some of your work?"
+      ],
+      [
+        "en",
+        "Tell me about your projects"
+      ],
+      [
+        "en",
+        "What kind of projects have you done?"
+      ],
+      [
+        "en",
+        "How can I contact you?"
+      ],
+      [
+        "en",
+        "What’s your contact information?"
+      ],
+      [
+        "en",
+        "How do I get in touch?"
+      ],
+      [
+        "en",
+        "I want to reach out to you"
+      ],
+      [
+        "en",
+        "Give me your email or phone"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {
+    "en": {
+      "info.about": [
+        {
+          "response": "Hello! I am Sukrit, a passionate software engineer interested in cybersecurity, AI, and web development."
+        }
+      ],
+      "info.skills": [
+        {
+          "response": "I have experience in JavaScript, Python, React, Node.js, and more!"
+        }
+      ],
+      "info.projects": [
+        {
+          "response": "You can find my projects on this page. Click on any project to see details."
+        }
+      ],
+      "info.contact": [
+        {
+          "response": "Feel free to email me at sukrit@example.com or use the contact form here!"
+        }
+      ]
+    }
+  },
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}
