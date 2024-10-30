@@ -1,6 +1,8 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import { TbMessageChatbot } from "react-icons/tb";
+// import { TbMessageChatbot } from "react-icons/tb";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import { SiMongodb } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";

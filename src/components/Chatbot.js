@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import { useState } from 'react';
 import axios from 'axios';
 import { TbMessageChatbot } from 'react-icons/tb';
