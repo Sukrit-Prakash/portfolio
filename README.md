@@ -1,40 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+A personal portfolio website built with Next.js showcasing my skills, projects, and experience as a software developer. This project includes a clean and modern design with a chatbot for user interaction, smooth navigation, and dedicated sections for skills, projects, and contact details.
 
-## Getting Started
+Table of Contents
+Features
+Technologies Used
+Setup
+Usage
+Project Structure
+Future Enhancements
+Contact
+Features
 
-First, run the development server:
-
-```bash
+Responsive Design: A modern UI that adjusts to different screen sizes.
+Navigation Bar: A smooth navbar for navigation across sections within the same page.
+Project Cards: Displays projects with links to detailed descriptions on separate pages.
+Skill Logos: Showcases various skills with logos in the skills section.
+Interactive Chatbot: A chatbot that uses NLP to answer questions, help users contact me, and provide project information.
+Contact Form: A form for users to send inquiries directly.
+Technologies Used
+Next.js: React framework for server-side rendering and routing.
+React-Icons: For iconography, including the chatbot icon.
+NLP Manager: To handle natural language processing for chatbot responses.
+CSS Modules: For component-specific styling.
+Setup
+Clone the Repository:
+git clone https://github.com/your-username/my-portfolio.git
+cd my-portfolio
+Install Dependencies:
+npm install
+Run the Development Server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser to see the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Environment Variables (if any): Create a .env.local file at the root to store any sensitive keys or configuration. Make sure to add .env.local to .gitignore to avoid pushing it to your repository.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Usage
+Portfolio Sections: Click on navbar links to scroll to different sections (About, Skills, Projects, Contact).
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Chatbot: Click the chatbot icon to open the chatbot window. The chatbot can answer questions like:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+"Tell me about Sukrit"
+"What are your skills?"
+"Show me your projects"
+"How can I contact you?"
+Project Cards: Click on a project card to navigate to a detailed project page.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Project Structure
+my-portfolio/
+├── public/               
+├── src/
+│   ├── components/       
+│   ├── pages/             
+│   ├── styles/            
+│   └── utils/             
+├── .gitignore
+├── README.md
+└── package.json
+Future Enhancements
+Dark Mode: Add a toggle for dark/light mode.
+Backend Integration: Connect the contact form to a backend for storing inquiries.
+Chatbot Enhancements: Add more contextual answers and improve NLP capabilities.
+Contact
+For any questions or suggestions, feel free to reach out!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Email: your-email@example.com
+LinkedIn: Your LinkedIn Profile
+GitHub: Your GitHub Profile
