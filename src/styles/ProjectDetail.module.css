@@ -1,0 +1,98 @@
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #a69aa9; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(48, 110, 160, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .projectHeader {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projectHeader h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin: 0;
+  }
+  
+  .projectImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projectDescription {
+    font-size: 1.2rem;
+    color: #555; /* Slightly muted text color */
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px 0;
+  }
+  
+  .technologiesUsed {
+    margin: 30px 0;
+    width: 100%;
+  }
+  
+  .technologiesUsed h3 {
+    font-size: 1.8rem;
+    color: #0070f3;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .technologyList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .technologyList li {
+    background-color: #596e80;
+    color: white;
+    font-size: 1rem;
+    margin: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .technologyList li:hover {
+    background-color: #005bb5; /* Darker hover color */
+  }
+  
+  .projectLink {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .projectLink a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #0b5a8e;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .projectLink a:hover {
+    background-color: #218838; /* Slightly darker green */
+    transform: scale(1.05); /* Slight zoom-in effect */
+  }
+  
